@@ -1,0 +1,36 @@
+.input_form {
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+    margin-top: 20px;
+    background: #efefef;
+    border-radius: 4px;
+    display: flex;
+    color:#efefef;
+    min-width:120px;
+}
+
+.icon{
+    width: 20px;
+    margin-left: 20px;
+    color: #9a9aa4;
+    padding-top: 12px;
+}
+.input {
+    background: #efefef;
+    border: none;
+    padding: 6px 12px;
+    box-sizing: border-box;
+    color: black;
+
+}
+::placeholder{
+    color:#a6a6a6;
+}
+.input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+
+

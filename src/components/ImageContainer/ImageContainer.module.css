@@ -1,0 +1,115 @@
+article{
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 470px;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    display:block;
+
+}
+.publicationTime{
+    color:#9a9aa4;
+    font-weight: 250;
+    margin-left:15px;
+
+}
+.userImage{
+    margin:8px 0px 8px 10px;
+    width: 32px;
+    border-radius: 50%;
+}
+.userImageSmall{
+    margin:8px 0px 8px 10px;
+    width: 22px;
+    border-radius: 50%;
+}
+.userImageDiv{
+    width: 32px;
+}
+
+.bold{
+    font-weight: 550;
+}
+.icons{
+    display: flex;
+    margin-bottom:10px;
+}
+.iconsWrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    align-content: flex-end;
+    margin-top: 10px;
+
+}
+.faHeart {
+
+    margin-left: 30px;
+    font-size: 23px;
+}
+.faComment {
+
+    margin-left: 20px;
+    font-size: 23px;
+}
+.faMessage {
+
+    margin-left: 20px;
+    margin-right: 300px;
+    font-size: 23px;
+
+}.faBookmark {
+     margin-right: 30px;
+     font-size: 23px;
+ }
+.faHeart:hover {
+    color: pink;
+    cursor: pointer;
+}
+.faComment:hover {
+    color: pink;
+    cursor: pointer;
+}
+.faMessage:hover {
+    color: pink;
+    cursor: pointer;
+}.faBookmark:hover {
+     color: pink;
+     cursor: pointer;
+ }
+
+.username{
+    font-weight: 500;
+    text-align: left;
+    margin: 13px 0px 0px 19px;
+}
+header{
+    display: flex;
+    justify-content: left;
+}
+
+.image{
+    width: 100%;
+}
+
+.description{
+    text-align: left;
+    margin:10px;
+}
+.likesInformation{
+    text-align:left;
+    margin:8px 0px 0px 10px;
+
+}
+.textInformation{
+    text-align:left;
+    display: flex;
+    padding:5px;
+    margin-bottom: 10px;
+}
+.time{
+    margin-bottom: 20px;
+}
