@@ -1,15 +1,12 @@
 import './App.css';
 import Header from "./components/Header/Header";
-import ImageContainer from "./components/ImageContainer/ImageContainer";
+import Feed from "./components/Feed/Feed";
 
 function App() {
   return (
     <div className="App">
         <Header/>
-        <ImageContainer/>
-        <ImageContainer/>
-        <ImageContainer/>
-        <ImageContainer/>
+        <Feed />
 
     </div>
   );

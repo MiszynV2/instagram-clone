@@ -5,20 +5,21 @@ import classes from "./Searchbar.module.css";
 const SearchForm = () => {
 
     return (
-        <>
+        <div>
             <form className={classes["input_form"]}>
 
                 <FontAwesomeIcon className={classes.icon} icon={faSearch}/>
-                <input
+                <div className={classes["inputWrapper"]}>
+                    <input
+                        type="text"
+                        className={classes["input"]}
+                        placeholder="Search"
+                    />
 
-                    type="text"
-                    className={classes["input"]}
-                    placeholder="Search"
-                />
+                </div>
 
             </form>
-
-        </>
+        </div>
     );
 };
 export default SearchForm;
