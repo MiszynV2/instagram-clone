@@ -1,0 +1,135 @@
+.ImagesGallery img{
+    margin-top: 10px;
+
+}
+
+.wrapper{
+    max-width: 935px;
+    border: 1px solid #eaeaea;
+    margin: auto;
+}
+.ImagesGallery{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ImagesButtons{
+    height: 53px;
+    align-items: center;
+    border-top: 1px solid #eaeaea;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    font-weight: 500;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.faTableColumns{
+
+}
+.faUserCircle{
+
+
+
+}
+
+.imageContainer{
+    position: relative;
+    display:flex;
+    margin-top: 20px;
+}
+
+
+
+
+.imageContainer:hover{
+    position: relative;
+    display:flex;
+    filter: brightness(70%);
+    opacity:1;
+    z-index: 1;
+
+}
+
+
+
+  .wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 920px;
+      margin: auto;
+  }
+
+.imageWrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageRowContainer{
+    display: flex;
+    position: relative;
+}
+
+.imageContainer{
+    position: relative;
+    display:flex;
+    margin-top: 20px;
+}
+
+.iconsContainer{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    color: red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.iconsContainer:hover{
+
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    color:white;
+    width: 100%;
+    height: 100%;
+    opacity:1;
+    z-index: 2;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.imageContainer:hover{
+    position: relative;
+    display:flex;
+    filter: brightness(70%);
+    opacity:1;
+    z-index: 1;
+
+}
+
+.faHeart{
+}
+.faComment{
+
+}
+.faHeart span{
+    color:white;
+    font-size: 14px;
+}
+.faComment span{
+    color:white;
+    font-size: 14px;
+}

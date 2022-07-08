@@ -1,0 +1,37 @@
+span{
+
+    color: #9a9aa4;
+    font-size: 11px;
+    cursor: pointer;
+
+
+}
+.wrapper{
+    display: flow-root;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 90px;
+    padding-bottom: 40px;
+
+}
+.footerLinksfirst {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerLinkssecond{
+    display: block;
+    margin-bottom: 10px;
+}
+.footerLinksfirst:hover{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.footerLinkssecond:hover{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
