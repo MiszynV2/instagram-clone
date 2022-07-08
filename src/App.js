@@ -22,6 +22,7 @@ function App() {
                     <Route exact path='/discover' element={<DiscoverPage/>}/>
                 </Routes>
             </Router>
+            <Feed />
             <Footer/>
         </div>
     );
