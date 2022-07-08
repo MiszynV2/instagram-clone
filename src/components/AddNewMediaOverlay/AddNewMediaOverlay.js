@@ -16,8 +16,8 @@ const AddNewMediaOverlay = () => {
                     <div className={classes.dropMediaHereLogoText}>
                         <FontAwesomeIcon className={classes.faVideoCamera} icon={faVideoCamera}/>
                         <span className={classes.dropMediaHereText}>Przeciągnij zdjęcia i filmy tutaj</span>
-                        <button className={classes.button}>Wybierz z komputera</button>
                     </div>
+                    <button className={classes.button} onClick={() => alert('no backend here :)')}>Wybierz z komputera</button>
                 </div>
             </div>
             </div>
