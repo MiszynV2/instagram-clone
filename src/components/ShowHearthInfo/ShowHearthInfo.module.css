@@ -4,18 +4,28 @@
 .thin{
     font-weight: 350;
 }
+.timeHeader {
+    margin: 6px 0 0 12px;
+}
 .wrapper{
     display:flex;
-    margin-top:55px;
+    margin-top:51px;
     position:absolute;
-    width: 60%;
-    background-color:#efefef;
+    width: 30%;
+    background-color: #fff;
+    flex-direction: column;
+    padding: 6px;
+    box-shadow: 1px 3px 5px #ccc;
+    z-index: 9999;
 }
 .userImgInfoCointainer{
     height:68px;
+    display: flex;
+    align-items: center;
 }
 .userImageDiv{
     height:44px;
+    margin: 0 12px 0 24px;
 }
 .userImage{
     height: 44px;

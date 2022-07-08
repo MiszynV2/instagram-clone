@@ -1,61 +1,21 @@
 import classes from './CompassImages.module.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment,faHeart} from "@fortawesome/free-solid-svg-icons";
 import ImageSchema from "../ImageSchema";
-
+import data from './../../data/data.json'
 const CompassImages = () => {
+
     return (
-        <div className={classes.wrapper}>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
-            <ImageSchema/>
+        <>
+        <div className={classes.scrollContainer}>
+                <div className={classes.wrapper}>
+
+                        {data.slice(50).map(imageData => (
+                            <ImageSchema imageData={imageData}/>
+                        ))}
+                </div>
         </div>
+x
+        </>
+
 
 
     );

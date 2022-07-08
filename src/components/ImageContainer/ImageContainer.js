@@ -2,20 +2,19 @@ import classes from "./ImageContainer.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart,faComment,faMessage,faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const ImageContainer = () => {
-
+const ImageContainer = ({imageData}) => {
     return (
         <article>
             <div className={classes.wrapper}>
                 <div className={classes.userInformation}>
                     <header>
-                        <div className={classes.userImageDiv}><img className={classes.userImage} alt="profile picture" src="https://img2.thejournal.ie/inline/4683220/original/?width=339&version=4683220"/></div>
-                        <span className={classes.username}>user.user</span>
+                        <div className={classes.userImageDiv}><img className={classes.userImage} alt="" src={imageData.user.profile_image.medium}/></div>
+                        <span className={classes.username}>{imageData.photographer_username}</span>
                     </header>
                 </div>
                 <div className={classes.imageWrapper}>
                 <div className={classes.imageDiv}>
-                    <img className={classes.image} alt="picture" src="https://img2.thejournal.ie/inline/4683220/original/?width=339&version=4683220"/>
+                    <img className={classes.image} alt={imageData.photo_description} src={imageData.photo_image_url}/>
                 </div>
                 </div>
 
@@ -31,17 +30,24 @@ const ImageContainer = () => {
                     <section className={classes.textInformation}>
                         <div>
                             <div className={classes.userImageDiv}>
-                                <img alt="profile picture" className={classes.userImageSmall} src="https://img2.thejournal.ie/inline/4683220/original/?width=339&version=4683220"/>
+                                <img alt="" className={classes.userImageSmall} src={imageData.friend.profile_image.small}/>
                             </div>
                         </div>
-                        <span className={classes.likesInformation}>liked by <span className={classes.bold}>ejjeej</span> and 12 others</span>
+                        <span className={classes.likesInformation}>
+                            liked by
+                            <span className={classes.bold}>{imageData.friend.name}</span>
+                            <span style={{margin: '0 2px'}}>
+                                and
+                            </span>
+                            {imageData.user.likes}
+                            <span style={{margin: '0 2px'}}>others</span></span>
                     </section>
                     <div className={classes.description}>
-                        <span className={classes.bold}>Jankowalske </span><span>Frajerskie zachowanie, jak nie umiesz z kimś przegrywać to w sapera nakurwiaj, a nie się rzucasz i nie dostajesz w.</span>
+                        <span className={classes.bold}>{imageData.photo_description} </span><span>{imageData.ai_description}</span>
                     </div>
                 </div>
                 <div className={classes.time}>
-                    <span className={classes.publicationTime}>3 hours ego</span>
+                    <span className={classes.publicationTime}>{new Date(imageData.photo_submitted_at).toLocaleDateString()}</span>
                 </div>
             </div>
         </article>

@@ -7,18 +7,22 @@
     max-width: 935px;
     border: 1px solid #eaeaea;
     margin: auto;
+    border-radius: 8px;
+    padding-bottom: 20px;
+
 }
 .ImagesGallery{
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    gap:10px;
+    height: 60vh;
+    overflow: auto;
 }
 
 .ImagesButtons{
     height: 53px;
     align-items: center;
-    border-top: 1px solid #eaeaea;
     color: grey;
     display: flex;
     flex-direction: row;
@@ -43,11 +47,11 @@
 .imageContainer{
     position: relative;
     display:flex;
-    margin-top: 20px;
 }
 
-
-
+.imageContainer img {
+    max-width: 300px;
+}
 
 .imageContainer:hover{
     position: relative;
@@ -60,18 +64,20 @@
 
 
 
+
   .wrapper{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       width: 100%;
-      max-width: 920px;
+      max-width: 935px;
       margin: auto;
   }
 
 .imageWrapper{
     display: flex;
     flex-wrap: wrap;
+    max-width: 300px;
 }
 
 .imageRowContainer{
@@ -79,11 +85,6 @@
     position: relative;
 }
 
-.imageContainer{
-    position: relative;
-    display:flex;
-    margin-top: 20px;
-}
 
 .iconsContainer{
     position: absolute;
@@ -111,25 +112,27 @@
     flex-wrap: wrap;
     flex-direction: row;
 }
-.imageContainer:hover{
-    position: relative;
-    display:flex;
-    filter: brightness(70%);
-    opacity:1;
-    z-index: 1;
 
-}
 
-.faHeart{
-}
-.faComment{
 
-}
 .faHeart span{
     color:white;
     font-size: 14px;
+    margin-left: 4px;
 }
 .faComment span{
     color:white;
     font-size: 14px;
+    margin-left: 4px;
+
+}
+
+.modalImageWrapper {
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modalImageWrapper img {
+    max-width: 70%;
+    max-height: 85vh;
 }

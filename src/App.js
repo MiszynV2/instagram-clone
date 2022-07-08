@@ -19,10 +19,11 @@ function App() {
                     <Route exact path='/add-media' element={<AddMediaPage/>}/>
                     <Route exact path='/home' element={<Feed/>}/>
                     <Route exact path='/about' element={<AddMediaPage/>}/>
-                    <Route exact path='/your-profile' element={<UserProfilePage/>}/>
+                    <Route exact path='/your-profile' element={<UserProfilePage />}/>
                     <Route exact path='/discover' element={<DiscoverPage/>}/>
                 </Routes>
             </Router>
+
             <Footer/>
         </div>
     );

@@ -16,12 +16,11 @@ const Header = () => {
         <div className={classes.wrapper}>
             <div className={classes.header}>
                 <Link to='/'><h1>Kilogram</h1></Link>
-                <Searchbar/>
+                {/*<Searchbar/>*/}
                 <ul className={classes.iconsList}>
                     <Link to='/home'>
                         <li><FontAwesomeIcon icon={faHome}/></li>
                     </Link>
-                    <li><FontAwesomeIcon icon={faMessage}/></li>
                     <Link to='/add-media'>
                         <li><FontAwesomeIcon icon={faPlus}/></li>
                     </Link>

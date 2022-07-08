@@ -8,9 +8,7 @@ import CompassImages from "../components/CompassSite/CompassImages";
 
 const DiscoverPage = () => {
     return (
-
         <>
-
             <CompassImages/>
         </>
 

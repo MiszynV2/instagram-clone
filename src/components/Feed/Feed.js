@@ -1,6 +1,7 @@
 import { Virtuoso } from 'react-virtuoso'
 import ImageContainer from "../../components/ImageContainer/ImageContainer";
 import { useCallback, useState, useEffect } from 'react'
+import data from './../../data/data.json'
 const Footer = () => {
     return (
         <div
@@ -14,7 +15,9 @@ const Footer = () => {
         </div>
     )
 }
+
 function Feed() {
+
     const [totalCount, setCount] = useState(10)
 
     const loadMore = useCallback(() => {
@@ -33,7 +36,8 @@ function Feed() {
             style={{ height: "calc(100vh - 89px)", }}
             totalCount={totalCount}
             endReached={loadMore}
-            itemContent={(index) => <ImageContainer index={index}/>}
+            data={data}
+            itemContent={(index, data) => <ImageContainer index={index} imageData={data} />}
             components={{ Footer }}
         />
 

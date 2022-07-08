@@ -20,17 +20,10 @@
 .wrapper{
     display:flex;
     margin: auto;
-    border: 1px solid #eaeaea;
     padding-bottom: 30px;
     max-width:935px;
 }
 
-.nameAndButtons{
-    margin-left: -26px;
-    display: flex;
-    justify-content:space-evenly ;
-
-}
 
 .bold{
     font-weight: 600;
@@ -51,9 +44,8 @@
     display: flex;
     width: 90%;
     margin-top: 20px;
-    margin-left: -29px;
     align-items: flex-start;
-    justify-content:space-evenly ;
+    justify-content:space-between ;
 }
 
 .profileInformation{
