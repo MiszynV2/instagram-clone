@@ -7,7 +7,7 @@ import AddMediaPage from "./pages/AddMediaPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import DiscoverPage from "./pages/DiscoverPage";
 
-
+//<Feed />
 function App() {
     return (
         <div className="App">
@@ -22,7 +22,7 @@ function App() {
                     <Route exact path='/discover' element={<DiscoverPage/>}/>
                 </Routes>
             </Router>
-            <Feed />
+
             <Footer/>
         </div>
     );

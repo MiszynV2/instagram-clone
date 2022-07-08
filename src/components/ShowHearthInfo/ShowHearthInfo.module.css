@@ -1,0 +1,28 @@
+.bold{
+    font-weight: 550;
+}
+.thin{
+    font-weight: 350;
+}
+.wrapper{
+    display:flex;
+    margin-top:55px;
+    position:absolute;
+    width: 60%;
+    background-color:#efefef;
+}
+.userImgInfoCointainer{
+    height:68px;
+}
+.userImageDiv{
+    height:44px;
+}
+.userImage{
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+}
+.userImage2{
+    height: 44px;
+    width: 44px;
+}
