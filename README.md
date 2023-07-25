@@ -1,8 +1,9 @@
-React Instagram Clone
+React Instagram Clone:
 
 Welcome to the React Instagram Clone project! This project is designed to help me upgrade my programming skills by building a clone of the popular social media platform, Instagram, using React. By working on this project, I had the opportunity to enhance my proficiency in React, Redux (if applicable), styling, API integration, and more. You'll gain valuable experience in building a front-end application from scratch, just like real-world software development.
 
-Prerequisites
+Prerequisites:
+
 Before getting started, ensure that you have the following prerequisites installed on your system:
 
 Node.js: Make sure you have Node.js installed. You can download it from the official website: https://nodejs.org/
@@ -12,23 +13,15 @@ Getting Started
 To get started with the project, follow these steps:
 
 Clone the repository:
-
-bash
-Copy code
 git clone <repository_url>
+
 Navigate to the project directory:
-
-bash
-Copy code
 cd react-instagram-clone
+
 Install the dependencies:
-
-Copy code
 npm install
-Start the development server:
 
-sql
-Copy code
+Start the development server:
 npm start
 
 License
