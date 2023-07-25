@@ -1,4 +1,6 @@
 React Instagram Clone:
+website page: https://ic-miszyn.vercel.app/home
+
 
 Welcome to the React Instagram Clone project! This project is designed to help me upgrade my programming skills by building a clone of the popular social media platform, Instagram, using React. By working on this project, I had the opportunity to enhance my proficiency in React, Redux (if applicable), styling, API integration, and more. You'll gain valuable experience in building a front-end application from scratch, just like real-world software development.
 
