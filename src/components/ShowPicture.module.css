@@ -1,0 +1,25 @@
+.overlay{
+    background-color: gray;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    z-index: 1;
+}
+.centerDiv{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    z-index: auto;
+    width: 80%;
+}
+.image{
+    width: 80%;
+    max-width: 540px;
+    z-index: 2;
+    opacity: 1;
+}
