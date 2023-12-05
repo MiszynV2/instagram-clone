@@ -3,7 +3,7 @@ import classes from "./ProfileSite/ProfileImage/ProfileImage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faHeart } from "@fortawesome/free-solid-svg-icons";
 import ImagePreviewModal from "./ImagePreviewModal/ImagePreviewModal";
-
+import placeHolderImage from "./../assets/image.png";
 const ImageSchema = ({ imageData }) => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [isImageLoaded, setImageLoaded] = useState(false);
@@ -28,8 +28,11 @@ const ImageSchema = ({ imageData }) => {
           </div>
           {!isImageLoaded && (
             <div className={classes.placeholder}>
-              {/* You can use a placeholder image or a loading animation here */}
-              Loading...
+              <img
+                className={classes.modalImageWrapper}
+                alt="placeholder"
+                src={placeHolderImage}
+              />
             </div>
           )}
           <img
